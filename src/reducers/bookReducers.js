@@ -16,6 +16,13 @@ const DEFAULT_BOOKS = [
     published: 2011,
     image: "/public/images/eloquentJavascript.jpeg",
     genre: "technology"
+  },
+
+  { author: "James Baldwin",
+    title: "Giovanni's Room",
+    published: 1956,
+    image: "/public/images/Giovanni's Room.jpeg",
+    genre: "gay literature"
   }
 ];
 
