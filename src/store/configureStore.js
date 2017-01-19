@@ -1,4 +1,4 @@
-import {createStore, compose, applyMiddleware} from 'redux';
+import {createStore , compose, applyMiddleware} from 'redux';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
@@ -50,3 +50,6 @@ function configureStoreDev(initialState) {
 const configureStore = process.env.NODE_ENV === 'production' ? configureStoreProd : configureStoreDev;
 
 export default configureStore;
+// export default function configureStore(initialState) {
+//   return createStore(rootReducer, initialState);
+// }
